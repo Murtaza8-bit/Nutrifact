@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrifact | Smart Recipe & Nutrition Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/logo.png" alt="Nutrifact Logo" onerror="this.style.display='none'">
+                <span id="logo-text">Nutri<span>fact</span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#fav-section">My Favorites</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="search-area">
+            <h1>Discover Smart Nutrition</h1>
+            <p>Search thousands of healthy recipes with full nutritional breakdowns.</p>
+            <form id="search-form">
+                <input type="text" id="search-input" placeholder="Search (e.g., Avocado, Keto...)" required>
+                <button type="submit">Search</button>
+            </form>
+            <div id="loader" class="hidden"></div>
+        </section>
+
+        <div class="app-layout">
+            <section id="recipe-grid" class="grid-container">
+                <div class="welcome-msg">
+                    <h3>Ready to eat healthy? Enter an ingredient above!</h3>
+                </div>
+            </section>
+
+            <aside id="fav-section" class="sidebar">
+                <h3>My Favorites</h3>
+                <ul id="fav-list">
+                    </ul>
+                <button id="clear-all" class="clear-btn">Clear All Favorites</button>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Nutrifact Portal. Built for Web Engineering Project.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
